@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            max-width: 100%;
+        }
+
+        td,
+        tr {
+            border: 2.5px solid grey;
+            text-align: left;
+            padding: 8px;
+        }
+
+        td {
+            width: 25%;
+        }
+
+        tr {
+            height: 50px;
+        }
+
+        #list_label {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+
+    <label>Exo 1</label>
+
+    <h1>Titre de niveau 1.</h1>
+
+    <h2>Titre de niveau 2.</h2>
+
+    <h3>Titre de niveau 3.</h3>
+
+    <h3>Titre de niveau 3.</h3>
+
+    <h2>Titre de niveau 2.</h2>
+
+    <h1>Titre de niveau 1.</h1>
+
+    <span>Texte en <b>gras</b>, texte en <i>italique</i>, texte <u>souligné</u></span>
+
+    <br><br>
+
+    <span>Lien vers <a href="actualité.html">actualité</a></span>
+
+    <br><br>
+
+    <span>Ecrivez-moi à <a href="mailto:spastore2@free.fr">spastore2@free.fr</a></span>
+
+    <br><br>
+
+    <div class="list">
+        <label>Liste des items : </label>
+        <ol>
+            <li>item 1</li>
+            <li>item 2:
+                <ul>
+                    <li>element 1</li>
+                    <li>element 2</li>
+                </ul>
+            </li>
+            <li>item 3</li>
+        </ol>
+    </div>
+
+    <br><br>
+
+    <label>Exo 2</label>
+
+    <table class="table">
+        <tr class="table_row">
+            <td>un tableau</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr class="table_row">
+            <td></td>
+            <td>à 6</td>
+            <td>cases</td>
+        </tr>
+    </table>
+
+    <br><br>
+
+    <label id="list_label"><b>Une liste</b></label>
+    <ol>
+        <li>Premier point
+            <ul>
+                <li>rubrique 1</li>
+                <li>rubrique 2</li>
+            </ul>
+        </li>
+        <li>2e point</li>
+        <li>3e point
+            <ul>
+                <li>rubrique 1</li>
+                <li>rubrique 2</li>
+            </ul>
+        </li>
+    </ol>
+
+    <br><br>
+
+    <table>
+        <tr>
+            <td>un autre tableau</td>
+            <td></td>
+            <td></td>
+            <td colspan="2"></td>
+        </tr>
+        <tr>
+            <td rowspan="3"></td>
+            <td rowspan="3">
+                <table width="100%">
+                    <tr>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                    </tr>
+                </table>
+            </td>
+            <td rowspan="3"></td>
+            <td rowspan="3" colspan="2">
+                <table width="100%">
+                    <tr>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+
+    <br><br>
+
+    <label>Exo 3</label>
+    <br><br>
+
+    <form>
+
+        <label>Votre pseudo : </label>
+        <input type="text">
+        <br><br>
+
+        <label>Votre mot de passe : </label>
+        <input type="text">
+        <br><br>
+
+        <label>Ressaisir votre mot de passe : </label>
+        <input type="text">
+        <br><br>
+
+        <label>Os préféré : </label>
+        <div style="margin-left: 5%;">
+            <input type="radio" id="xp" name="os" value="xp">
+            <label for="xp">Windows XP</label><br>
+    
+            <input type="radio" id="vista" name="os" value="vista">
+            <label for="vista">Windows Vista</label><br>
+    
+            <input type="radio" id="macosx" name="os" value="macosx">
+            <label for="macosx">MacOS X</label><br>
+    
+            <input type="radio" id="linux" name="os" value="linux">
+            <label for="linux">Linux</label><br>
+    
+            <input type="radio" id="other" name="os" value="other">
+            <label for="other">Other</label><br>
+        </div>
+        <br>
+
+        <label>Vous possédez : </label>
+        <div style="margin-left: 5%;">
+            <input type="checkbox" id="laptop" name="laptop" value="laptop">
+            <label for="laptop">Un ordinateur portable</label><br>
+    
+            <input type="checkbox" id="desktop" name="desktop" value="desktop">
+            <label for="desktop">Un ordinateur de bureau</label><br>
+    
+            <input type="checkbox" id="notebook" name="notebook" value="notebook">
+            <label for="notebook">Un netbook</label><br>
+    
+            <input type="checkbox" id="pad" name="pad" value="pad">
+            <label for="pad">Une tablette (Pad)</label><br>
+        </div>
+        <br>
+
+        <label>Votre profession : </label>
+        <select name="personal_situation" id="personal_situation">
+            <option value="unemployed">Chômeur</option>
+            <option value="student">Etudiant</option>
+            <option value="fonctionnaire">Fonctionnaire</option>
+            <option value="privé">Privé</option>
+            <option value="retired">Retraité</option>
+        </select>
+        <br><br>
+
+        <button>S'inscrire !</button>
+    </form>
+
+
+</body>
+
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            max-width: 100%;
+        }
+
+        td,
+        tr {
+            border: 2.5px solid grey;
+            text-align: left;
+            padding: 8px;
+        }
+
+        td {
+            width: 25%;
+        }
+
+        tr {
+            height: 50px;
+        }
+
+        #list_label {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <label>Exo 2</label>
+
+    <table class="table">
+        <tr class="table_row">
+            <td>un tableau</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr class="table_row">
+            <td></td>
+            <td>à 6</td>
+            <td>cases</td>
+        </tr>
+    </table>
+
+    <br><br>
+
+    <label id="list_label"><b>Une liste</b></label>
+    <ol>
+        <li>Premier point
+            <ul>
+                <li>rubrique 1</li>
+                <li>rubrique 2</li>
+            </ul>
+        </li>
+        <li>2e point</li>
+        <li>3e point
+            <ul>
+                <li>rubrique 1</li>
+                <li>rubrique 2</li>
+            </ul>
+        </li>
+    </ol>
+
+    <br><br>
+
+    <table>
+        <tr>
+            <td>un autre tableau</td>
+            <td></td>
+            <td></td>
+            <td colspan="2"></td>
+        </tr>
+        <tr>
+            <td rowspan="3"></td>
+            <td rowspan="3">
+                <table width="100%">
+                    <tr>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                    </tr>
+                </table>
+            </td>
+            <td rowspan="3"></td>
+            <td rowspan="3" colspan="2">
+                <table width="100%">
+                    <tr>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <br><br>
+
+    <a href="exo3.html">Exo 3</a>
+
+</body>
+
+</html>

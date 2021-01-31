@@ -1,0 +1,3 @@
+Quand on enregistre avec les crochets ça nous renvoi un tableau des valeurs,
+tandis que si on enregistre sans,
+ça nous renvoi un string (dernière valeur selectionnée)

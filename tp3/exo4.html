@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <style>
+        #hover {
+            width: 250px;
+            height: 250px;
+            background-color: blue;
+            color: white;
+        }
+    </style>
+
+    <script>
+        function coucou() {
+            alert('coucou');
+        }
+
+        function hover(text){
+            alert(text)
+        }
+    </script>
+</head>
+
+<body onload="showElements('1er param', '2nd param', '3e param', '4e param')">
+    <div id="button">
+        <button onclick="coucou()">alert</button>
+    </div>
+
+    <br><br><br>
+
+    <div id="hover" onmouseover="hover('bien vu')">
+        <label>Passes sur moi</label>
+    </div>
+</body>
+
+</html>

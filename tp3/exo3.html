@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <style>
+        table,
+        tr,
+        td {
+            border: 1px solid grey;
+        }
+    </style>
+
+    <script>
+        function showElements(param1, param2, param3, param4) {
+            for (i = 0; i < arguments.length; i++) {
+                col = document.createElement("td");
+                content = document.createTextNode(arguments[i]);
+                col.appendChild(content);
+                document.getElementById('row').appendChild(col)
+            }
+        }
+    </script>
+</head>
+
+<body onload="showElements('1er param', '2nd param', '3e param', '4e param')">
+    <div>
+        <table>
+            <tr id="row"></tr>
+        </table>
+    </div>
+</body>
+
+</html>

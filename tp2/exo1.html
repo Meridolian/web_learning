@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>EX1, EX2, EX3 - TP2</title>
+
+    <!-- Ajouts EXO2 -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<h2>Moteur de recherche</h2>
+
+<form action="http://univcergy.phpnet.org/CCI/form.php" method="post">
+<table>
+    <tbody>
+        <tr>
+            <td>Mots clefs</td>
+            <td><input class="form-control" type="text" id="motclef" name="motclef"></td>
+        </tr>
+        <tr>
+            <td>Catégorie</td>
+            <td><select class="form-control" name="categorie" id="categorie-selected" size="3">
+                    <option value="jouet">Jouet</option>
+                    <option value="location">Location</option>
+                    <option value="voitures">Voitures</option>
+                </select></td>
+        </tr>
+        <tr>
+            <td>Département</td>
+            <td><select class="form-control" name="dept" id="dept-selected">
+                    <option value="bretagne">Bretagne</option>
+                    <option value="creuse">Creuse</option>
+                    <option value="isère">Isère</option>
+                </select></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><button class="btn btn-success btn-lg" type="submit">Chercher</button></td>
+        </tr>
+    </tbody>
+</table>
+</form>
+
+<a href="exo4.html">Exo 4</a>
+</body>
+</html>

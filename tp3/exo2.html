@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">    
+    <style>
+        table,
+        tr,
+        td {
+            border: 1px solid grey;
+        }
+    </style>
+
+    <script>
+        num = 13;
+
+        string = "Une chaine de charactère";
+
+        num_and_string = string + " et le numéro " + num;
+
+        function showElements() {
+            document.getElementById('num').innerHTML = 'num = ' + num;
+            document.getElementById('string').innerHTML = 'string = ' + string;
+            document.getElementById('num_and_string').innerHTML = 'num_and_string = ' + num_and_string;
+        }
+    </script>
+</head>
+
+<body onload="showElements()">
+    <div>
+        <table>
+            <tr>
+                <td><span id="num"></span></td>
+                <td><span id="string"></span></td>
+                <td><span id="num_and_string"></span></td>
+            </tr>
+        </table>
+    </div>
+</body>
+
+</html>

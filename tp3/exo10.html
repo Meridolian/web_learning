@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+
+    <script>
+        var ok = false;
+        function changeImage(){
+            var image = document.getElementById("img");
+            if (ok == false) {
+                image.src = "img/mcdo.png"
+                ok = true;
+            } else {
+                image.src = "img/linkedin.png"
+                ok = false;
+            }
+  }
+    </script>
+</head>
+
+<body>
+    <img id="img" src="img/linkedin.png"/>
+    <a href="#" onmouseover="changeImage()" onmouseout="changeImage()">Découvre la boite qui va t'embaucher</a>
+</body>
+</html>
